@@ -1,0 +1,4 @@
+.text-wrap {
+    overflow: scroll;
+    max-width: 750px !important;
+}

@@ -11,7 +11,9 @@ class LinkList extends Component {
 
             return (
                 <tr>
-                    <td>{url}</td>
+                    <td className="text-wrap">
+                        {url}
+                    </td>
                     <td>
                         <a href={shortLink}>{shortLink}</a>
                     </td>
@@ -23,7 +25,7 @@ class LinkList extends Component {
 
     render() {
         return (
-            <table className="table">
+            <div className="container"><table width="100%" className="table">
                 <thead>
                     <tr>
                         <th>URL</th>
@@ -34,7 +36,7 @@ class LinkList extends Component {
                 <tbody>
                     {this.renderRows()}
                 </tbody>
-            </table>
+            </table></div>
         );
     }
 }
